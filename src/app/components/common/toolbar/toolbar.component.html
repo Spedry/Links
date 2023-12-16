@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+    <mat-icon [svgIcon]="iconName" />
+  </button>
+  <h1>Links</h1>
+  <span class="example-spacer"></span>
+  <mat-form-field>
+    <mat-label>Release</mat-label>
+    <mat-select [(ngModel)]="pageContent" (ngModelChange)="onSelectionChange()">
+      <mat-option *ngFor="let pageContent of pageContents; trackBy: trackByFn" [value]="pageContent">
+        {{pageContent.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-toolbar>

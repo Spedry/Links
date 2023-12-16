@@ -1,0 +1,11 @@
+{
+  "id": "largeWidgets",
+  "widgets": [
+    {
+      "id": "acc",
+      "name": "AccRelease",
+      "type": "acc-release",
+      "content": "accLinks"
+    }
+  ]
+}

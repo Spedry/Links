@@ -1,0 +1,52 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="{{ ( cardLayout | async )?.columns }}" rowHeight="200px">
+
+    <!--Mini Cards -->
+    <mat-grid-tile *ngFor="let widget of getWidgets('miniWidgets').widgets"
+                   [colspan]="( cardLayout | async )?.miniCard?.cols || 0"
+                   [rowspan]="( cardLayout | async )?.miniCard?.rows || 0">
+      <ng-container [ngSwitch]="widget.type">
+
+        <app-card *ngSwitchDefault title="{{widget.name}}">
+          <h1>Unknown Widget: {{widget.type}}</h1>
+        </app-card>
+      </ng-container>
+    </mat-grid-tile>
+    <!------------------------------------------------------------------------>
+
+    <!--Medium Cards -->
+    <mat-grid-tile *ngFor="let widget of getWidgets('mediumWidgets').widgets"
+                   [colspan]="( cardLayout | async )?.mediumCard?.cols || 0"
+                   [rowspan]="( cardLayout | async )?.mediumCard?.rows || 0">
+      <ng-container [ngSwitch]="widget.type">
+
+        <app-card *ngSwitchDefault title="{{widget.name}}">
+          <h1>Unknown Widget: {{widget.type}}</h1>
+        </app-card>
+      </ng-container>
+    </mat-grid-tile>
+    <!------------------------------------------------------------------------>
+
+    <!--Large Cards -->
+    <mat-grid-tile *ngFor="let widget of getWidgets('largeWidgets').widgets"
+                   [colspan]="( cardLayout | async )?.largeCard?.cols || 0"
+                   [rowspan]="( cardLayout | async )?.largeCard?.rows || 0">
+      <ng-container [ngSwitch]="widget.type">
+
+        <app-card *ngSwitchCase="'acc-release'" title="{{widget.name}}">
+          <div class="widget-container">
+            <div class="table-container">
+              <app-link-list [content]="widget.content"></app-link-list>
+            </div>
+          </div>
+        </app-card>
+
+        <app-card *ngSwitchDefault title="{{widget.name}}">
+          <h1>Unknown Widget: {{widget.type}}</h1>
+        </app-card>
+      </ng-container>
+    </mat-grid-tile>
+    <!------------------------------------------------------------------------>
+  </mat-grid-list>
+</div>

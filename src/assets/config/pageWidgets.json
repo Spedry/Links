@@ -1,0 +1,50 @@
+[
+  {
+    "id": "REL-M_11-23",
+    "allWidgets": [
+      {
+        "widgetType": "largeWidgets",
+        "widgets": [
+          {
+            "id": "acc",
+            "name": "AccRelease",
+            "type": "acc-release",
+            "content": "accLinks-11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "REL-M_10-23",
+    "allWidgets": [
+      {
+        "widgetType": "largeWidgets",
+        "widgets": [
+          {
+            "id": "acc",
+            "name": "AccRelease",
+            "type": "acc-release",
+            "content": "accLinks-10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "REL-M_01-24",
+    "allWidgets": [
+      {
+        "widgetType": "largeWidgets",
+        "widgets": [
+          {
+            "id": "acc",
+            "name": "AccRelease",
+            "type": "acc-release",
+            "content": "accLinks-01"
+          }
+        ]
+      }
+    ]
+  }
+]

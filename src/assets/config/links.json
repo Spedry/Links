@@ -1,0 +1,29 @@
+[
+  {
+    "id": "accLinks-10",
+    "links": [
+      {
+        "name": "AccAdmin v2.1",
+        "link": "http://accadmin-10.dev.alcasys.sk/acc_admin/"
+      }
+    ]
+  },
+  {
+    "id": "accLinks-11",
+    "links": [
+      {
+        "name": "AccAdmin v2.2",
+        "link": "http://accadmin-11.dev.alcasys.sk/acc_admin/"
+      }
+    ]
+  },
+  {
+    "id": "accLinks-01",
+    "links": [
+      {
+        "name": "AccAdmin v2.3",
+        "link": "http://accadmin-01.dev.alcasys.sk/acc_admin/"
+      }
+    ]
+  }
+]
